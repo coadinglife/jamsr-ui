@@ -1,0 +1,27 @@
+@utility z-backdrop {
+  z-index: 98;
+}
+@utility z-popover {
+  z-index: 99;
+}
+@utility z-dialog {
+  z-index: 99;
+}
+@utility z-header {
+  z-index: 60;
+}
+@utility z-drawer {
+  z-index: 60;
+}
+@utility opacity-hover {
+  opacity: 8%;
+}
+@utility opacity-selected {
+  opacity: 16%;
+}
+@utility opacity-disabled {
+  opacity: 48%;
+}
+@utility rounded-inherit {
+  border-radius: inherit;
+}

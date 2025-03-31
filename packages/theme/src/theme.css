@@ -1,0 +1,182 @@
+@theme {
+  /* animations */
+  --animate-progress: progress 1s infinite linear;
+  --animate-ripple: ripple 1s linear;
+
+  @keyframes progress {
+    0% {
+      transform: translateX(-50%) scaleX(0.2);
+    }
+    100% {
+      transform: translateX(100%) scaleX(1);
+    }
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(4);
+    opacify: 0;
+  }
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@theme inline {
+  /* Background Colors */
+  --color-background: var(--ui-background);
+  --color-background-secondary: var(--ui-background-secondary);
+  --color-background-tertiary: var(--ui-background-tertiary);
+  --color-background-inverse: var(--ui-background-inverse);
+
+  /* Foreground Colors */
+  --color-foreground-50: var(--ui-foreground-50);
+  --color-foreground-100: var(--ui-foreground-100);
+  --color-foreground-200: var(--ui-foreground-200);
+  --color-foreground-300: var(--ui-foreground-300);
+  --color-foreground-400: var(--ui-foreground-400);
+  --color-foreground-500: var(--ui-foreground-500);
+  --color-foreground-600: var(--ui-foreground-600);
+  --color-foreground-700: var(--ui-foreground-700);
+  --color-foreground-800: var(--ui-foreground-800);
+  --color-foreground-900: var(--ui-foreground-900);
+  --color-foreground: var(--ui-foreground);
+  --color-foreground-link: var(--ui-foreground-link);
+  --color-foreground-secondary: var(--ui-foreground-secondary);
+  --color-foreground-tertiary: var(--ui-foreground-tertiary);
+  --color-foreground-inverse: var(--ui-foreground-inverse);
+
+  /* Divider Colors */
+  --color-divider-light: var(--ui-divider-light);
+  --color-divider: var(--ui-divider);
+  --color-divider-dark: var(--ui-divider-dark);
+
+  /* Focus Color */
+  --color-focus: var(--ui-focus);
+
+  /* Overlay Color */
+  --color-overlay: var(--ui-overlay);
+
+  /* Content Colors */
+  --color-content1: var(--ui-content1);
+  --color-content1-foreground: var(--ui-content1-foreground);
+  --color-content2: var(--ui-content2);
+  --color-content2-foreground: var(--ui-content2-foreground);
+  --color-content3: var(--ui-content3);
+  --color-content3-foreground: var(--ui-content3-foreground);
+  --color-content4: var(--ui-content4);
+  --color-content4-foreground: var(--ui-content4-foreground);
+
+  /* Default Colors */
+  --color-default-50: var(--ui-default-50);
+  --color-default-100: var(--ui-default-100);
+  --color-default-200: var(--ui-default-200);
+  --color-default-300: var(--ui-default-300);
+  --color-default-400: var(--ui-default-400);
+  --color-default-500: var(--ui-default-500);
+  --color-default-600: var(--ui-default-600);
+  --color-default-700: var(--ui-default-700);
+  --color-default-800: var(--ui-default-800);
+  --color-default-900: var(--ui-default-900);
+  --color-default-foreground: var(--ui-default-foreground);
+  --color-default: var(--ui-default);
+
+  /* Primary Colors */
+  --color-primary-50: var(--ui-primary-50);
+  --color-primary-100: var(--ui-primary-100);
+  --color-primary-200: var(--ui-primary-200);
+  --color-primary-300: var(--ui-primary-300);
+  --color-primary-400: var(--ui-primary-400);
+  --color-primary-500: var(--ui-primary-500);
+  --color-primary-600: var(--ui-primary-600);
+  --color-primary-700: var(--ui-primary-700);
+  --color-primary-800: var(--ui-primary-800);
+  --color-primary-900: var(--ui-primary-900);
+  --color-primary-foreground: var(--ui-primary-foreground);
+  --color-primary: var(--ui-primary);
+
+  /* Secondary Colors */
+  --color-secondary-50: var(--ui-secondary-50);
+  --color-secondary-100: var(--ui-secondary-100);
+  --color-secondary-200: var(--ui-secondary-200);
+  --color-secondary-300: var(--ui-secondary-300);
+  --color-secondary-400: var(--ui-secondary-400);
+  --color-secondary-500: var(--ui-secondary-500);
+  --color-secondary-600: var(--ui-secondary-600);
+  --color-secondary-700: var(--ui-secondary-700);
+  --color-secondary-800: var(--ui-secondary-800);
+  --color-secondary-900: var(--ui-secondary-900);
+  --color-secondary-foreground: var(--ui-secondary-foreground);
+  --color-secondary: var(--ui-secondary);
+
+  /* Success Colors */
+  --color-success-50: var(--ui-success-50);
+  --color-success-100: var(--ui-success-100);
+  --color-success-200: var(--ui-success-200);
+  --color-success-300: var(--ui-success-300);
+  --color-success-400: var(--ui-success-400);
+  --color-success-500: var(--ui-success-500);
+  --color-success-600: var(--ui-success-600);
+  --color-success-700: var(--ui-success-700);
+  --color-success-800: var(--ui-success-800);
+  --color-success-900: var(--ui-success-900);
+  --color-success-foreground: var(--ui-success-foreground);
+  --color-success: var(--ui-success);
+
+  /* Warning Colors */
+  --color-warning-50: var(--ui-warning-50);
+  --color-warning-100: var(--ui-warning-100);
+  --color-warning-200: var(--ui-warning-200);
+  --color-warning-300: var(--ui-warning-300);
+  --color-warning-400: var(--ui-warning-400);
+  --color-warning-500: var(--ui-warning-500);
+  --color-warning-600: var(--ui-warning-600);
+  --color-warning-700: var(--ui-warning-700);
+  --color-warning-800: var(--ui-warning-800);
+  --color-warning-900: var(--ui-warning-900);
+  --color-warning-foreground: var(--ui-warning-foreground);
+  --color-warning: var(--ui-warning);
+
+  /* Danger Colors */
+  --color-danger-50: var(--ui-danger-50);
+  --color-danger-100: var(--ui-danger-100);
+  --color-danger-200: var(--ui-danger-200);
+  --color-danger-300: var(--ui-danger-300);
+  --color-danger-400: var(--ui-danger-400);
+  --color-danger-500: var(--ui-danger-500);
+  --color-danger-600: var(--ui-danger-600);
+  --color-danger-700: var(--ui-danger-700);
+  --color-danger-800: var(--ui-danger-800);
+  --color-danger-900: var(--ui-danger-900);
+  --color-danger-foreground: var(--ui-danger-foreground);
+  --color-danger: var(--ui-danger);
+
+  /* Text */
+  --text-2xs: var(--ui-fs-2xs);
+  --text-xs: var(--ui-fs-xs);
+  --text-sm: var(--ui-fs-sm);
+  --text-base: var(--ui-fs-base);
+  --text-md: var(--ui-fs-md);
+  --text-lg: var(--ui-fs-lg);
+  --text-xl: var(--ui-fs-xl);
+  --text-2xl: var(--ui-fs-2xl);
+  --text-3xl: var(--ui-fs-3xl);
+  --text-4xl: var(--ui-fs-4xl);
+  --text-5xl: var(--ui-fs-5xl);
+
+  /* Shadow */
+  --shadow-sm: var(--ui-box-shadow-sm);
+  --shadow-md: var(--ui-box-shadow-md);
+  --shadow-lg: var(--ui-box-shadow-lg);
+
+  /* Action */
+  --color-action-hover: var(--ui-action-hover);
+  --color-action-selected: var(--ui-action-selected);
+  --color-action-disabled: var(--ui-action-disabled);
+}
